@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto minmax(290px, 320px);
+    grid-auto-rows: 30px 1fr minmax(420px, 2fr);
+    grid-template-areas: 
+    'Header Header'
+    'Result History'
+    'Buttons History';
+} 
+
+#Header {
+    background: gainsboro;
+    grid-area: Header;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Result {
+    background: gainsboro;
+    grid-area: Result;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Buttons {
+    background: gainsboro;
+    grid-area: Buttons;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    vertical-align: middle;
+    gap: 2px;
+}
+
+.his-and-memory{
+    display: flex;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.text-history {
+    position: relative;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+#History {
+    background: gainsboro;
+    grid-area: History;
+}
+
+.His {
+    font-weight: 700;
+    display: flex;
+    margin-right: 2rem;
+    border-bottom: 5px solid orange;
+}
+
+.Mem {
+    font-weight: 700;
+    display: flex;
+}
+
+.Btn {
+    background: whitesmoke;
+    width: 24%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 1px;
+}
+
+.Btn:hover {
+    background: #e3e3e3;
+}
+
+.dark:hover {
+    background: #d2d2d2;
+}
+
+button {
+    border: none;
+}
+
+.dark {
+    background: #e3e3e3;
+}
+
+.Standard {
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+    background: gainsboro;
+    width: 100%;
+    height: 10%;
+    font-size: 1rem;
+    display: flex;
+}
+
+.line {
+    height: 45px;
+    width: 20px;
+    margin-right: 1.2rem;
+    text-align: center;
+}
+
+.stand {
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.1rem;
+}
+
+.img-mini {
+    position: relative;
+    margin-left: 1.2rem;
+    margin-top: 0.1rem;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.Para2 {
+    margin: 0.3rem;
+    font-weight: 500;
+}
+
+.close:hover {
+    background: red;
+}
+
+.maximize:hover {
+    background: #d2d2d2;
+}
+
+.minimize:hover {
+    background: #d2d2d2;
+}
+
+.Para {
+    position: relative;
+    right: 0.3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    align-self: flex-end;
+}
+
+.Small {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.small-ms {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+
+.MC,
+.MR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #b7b7b7;
+}
+
+.MC:hover,
+.MR:hover {
+    background-color: gainsboro;
+}
+
+.Ms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: left;
+}
+
+.ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 50%;
+    min-width: 330px;
+}
+
+.li {
+    background: gainsboro;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    width: 50px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li:hover {
+    background: #d2d2d2;
+}
+
+.img-mini:hover {
+    background: #bababa;
+}
+
+.num {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.line:hover {
+    background: #bababa;
+}
