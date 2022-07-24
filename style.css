@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -42,7 +41,6 @@
     text-align: center;
     font-size: large;
     vertical-align: middle;
-    /* insert gap */
     gap: 0.2rem;
 }
 
@@ -75,9 +73,12 @@
     display: flex;
 }
 
+#buttons .btnhide {
+    display: none;
+}
+
 .Btn {
     background: whitesmoke;
-    /* improve with and height */
     width: 19%;
     height: 19%;
     display: flex;
@@ -127,12 +128,8 @@ button {
     margin-top: 0.1rem;
 }
 
-.img-mini {
-    position: relative;
-    margin-left: 1.2rem;
-    margin-top: 0.1rem;
-    height: 1.3rem;
-    width: 1.3rem;
+.history-icon {
+    align-self: flex-start;
 }
 
 .Para2 {
@@ -152,9 +149,9 @@ button {
     background: #d2d2d2;
 }
 
-.Para {
+.number {
     position: relative;
-    right: 0.3rem;
+    right: 1rem;
     margin-bottom: 2rem;
     font-weight: bold;
     font-size: 2.6rem;
@@ -224,7 +221,7 @@ ul {
 
 li{
     width: 50px;
-    height: 80%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,4 +242,51 @@ li:hover {
 
 .line:hover {
     background: #bababa;
+}
+
+.four {
+    order: -4;
+}
+
+.three {
+    order: -3;
+}
+
+.two {
+    order: -2;
+}
+
+.one {
+    order: -1;
+}
+
+@media (min-width: 1024px) and (min-height: 620px) {
+    #buttons .btnhide {
+        display: block;
+    }
+
+    .btn {
+        width: 15%;
+        height: 15%;
+        order: 1;
+    }
+}
+
+@media (min-width: 740px) {
+
+}
+
+@media (min-width: 500px) {
+    #container {
+        grid-template-columns: minmax(57%,auto) minmax(43%, 320px);
+        grid-template-areas: 
+        'header header'
+        'result history'
+        'buttons history';
+        }
+
+        #history {
+            display: block;
+            grid-area: history;
+        }
 }
