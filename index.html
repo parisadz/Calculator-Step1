@@ -1,95 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://img.icons8.com/fluency/48/000000/calculator.png"/>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
-</head>
-<body>
-    <div id="Container">
-        <div id="Header">
-            <p class="Para2">Calculator</p>
-            <ul>
-                <li class="minimize">&#9866;</li>
-                <li class="maximize">&#9744;</li>
-                <li class="close">&#9747;</li>
-            </ul>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/fluency/48/000000/calculator.png"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Calculator</h1>
+        <ul>
+          <li>&#9866;</li>
+          <li>&#9744;</li>
+          <li>&#9747;</li>
+        </ul>
+      </div>
+      <div id="result">
+        <div class="up">
+          <div class="standard">
+            <img
+              class="menu"
+              src="https://img.icons8.com/material-outlined/24/000000/menu--v2.png"
+            />
+            <p class="standard-p">Standard</p>
+          </div>
         </div>
-        <div id="Result">
-            <div class="Standard">
-                <p class="line">
-                    <img src="https://img.icons8.com/material-sharp/24/000000/menu--v1.png"/>
-                </p>
-                <p class="stand">Standard</p>
-                <img class="history-icon" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/000000/external-history-essentials-tanah-basah-basic-outline-tanah-basah.png"/>
-            </div>
-            <p class="number">0</p>
-            <div class="Small">
-                <div class="small-ms">
-                <ul class="ul">
-                    <li class="MC li">MC</li>
-                    <li class="MR li">MR</li>
-                    <li class="Ms li">M+</li>
-                    <li class="Ms li">M-</li>
-                    <li class="Ms li">MS</li>
-                </ul>
-                </div>
-            </div>
+        <p class="number">0</p>
+        <div class="small">
+          <div class="small-btn-ms">
+            <button class="small-ms" disabled>MC</button>
+            <button class="small-ms" disabled>MR</button>
+            <button class="small-ms active">M+</button>
+            <button class="small-ms active">M-</button>
+            <button class="small-ms active">MS</button>
+          </div>
         </div>
-        <div id="Buttons">
-            <button class="Btn dark four">
-                <img src="https://img.icons8.com/metro/26/000000/percentage2--v1.png"/>
-            </button>
-            <button class="Btn dark">CE</button>
-            <button class="Btn dark">C</button>
-            <button class="Btn dark">
-                <img src="https://img.icons8.com/material-outlined/24/000000/clear-symbol--v1.png"/>
-            </button>
-            <button class="Btn dark">
-                <img src="https://img.icons8.com/small/30/undefined/divide.png"/>
-            </button>
-            <button class="Btn dark three">
-                <img src="https://img.icons8.com/ios-glyphs/30/000000/square-root.png"/>
-            </button>
-            <button class="Btn num">7</button>
-            <button class="Btn num">8</button>
-            <button class="Btn num">9</button>
-            <button class="Btn dark">
-                <img src="https://img.icons8.com/material/24/000000/multiply--v1.png"/>
-            </button>
-            <button class="Btn dark tow">&#x1D465;&#xb2;</button>
-            <button class="Btn num">4</button>
-            <button class="Btn num">5</button>
-            <button class="Btn num">6</button>
-            <button class="Btn dark">
-                <img src="https://img.icons8.com/material-two-tone/24/000000/minus--v1.png"/>
-            </button>
-            <button class="Btn dark btnhide">&#x1D465;&#xb3;</button>
-            <button class="Btn num">1</button>
-            <button class="Btn num">2</button>
-            <button class="Btn num">3</button>
-            <button class="Btn dark">
-                <img src="https://img.icons8.com/material/24/000000/plus-math--v2.png"/>
-            </button>
-            <button class="Btn dark one">1/x</button>
-            <button class="Btn dark">
-                <img src="https://img.icons8.com/windows/32/000000/plus-slash-minus.png"/>
-            </button>
-            <button class="Btn num">0</button>
-            <button class="Btn dark">.</button>
-            <button class="Btn dark">
-                <img src="https://img.icons8.com/material/24/000000/equal-sign--v1.png"/>
-            </button>
+      </div>
+      <div id="buttons">
+        <button class="Btn dark fourth">
+          <img
+            src="https://img.icons8.com/metro/26/000000/percentage2--v1.png"
+          />
+        </button>
+        <button class="Btn dark">CE</button>
+        <button class="Btn dark">C</button>
+        <button class="Btn dark">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/clear-symbol--v1.png"
+          />
+        </button>
+        <button class="Btn dark">
+          <img src="https://img.icons8.com/small/30/undefined/divide.png" />
+        </button>
+        <button class="Btn dark third">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/000000/square-root.png"
+          />
+        </button>
+        <button class="Btn num">7</button>
+        <button class="Btn num">8</button>
+        <button class="Btn num">9</button>
+        <button class="Btn dark">
+          <img
+            src="https://img.icons8.com/material/24/000000/multiply--v1.png"
+          />
+        </button>
+        <button class="Btn dark second">&#x1D465;&#xb2;</button>
+        <button class="Btn num">4</button>
+        <button class="Btn num">5</button>
+        <button class="Btn num">6</button>
+        <button class="Btn dark">
+          <img
+            src="https://img.icons8.com/material-two-tone/24/000000/minus--v1.png"
+          />
+        </button>
+        <button class="Btn dark btnhide">&#x1D465;&#xb3;</button>
+        <button class="Btn num">1</button>
+        <button class="Btn num">2</button>
+        <button class="Btn num">3</button>
+        <button class="Btn dark">
+          <img
+            src="https://img.icons8.com/material/24/000000/plus-math--v2.png"
+          />
+        </button>
+        <button class="Btn dark first">1/x</button>
+        <button class="Btn dark">
+          <img
+            src="https://img.icons8.com/windows/32/000000/plus-slash-minus.png"
+          />
+        </button>
+        <button class="Btn num">0</button>
+        <button class="Btn dark num">.</button>
+        <button class="Btn dark">
+          <img
+            src="https://img.icons8.com/material/24/000000/equal-sign--v1.png"
+          />
+        </button>
+      </div>
+      <div id="history">
+        <div class="history-and-memory">
+          <p class="his">History</p>
+          <p class="mem">Memory</p>
         </div>
-        <div id="History">
-            <div class="his-and-memory">
-                <p class="His">History</p>
-                <p class="Mem">Memory</p>
-            </div>
-            <p class="text-history">There's no history yet.</p>
+        <div class="text-history">
+          <p>There's no history yet.</p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
